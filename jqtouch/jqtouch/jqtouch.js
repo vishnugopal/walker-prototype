@@ -259,7 +259,7 @@
 
         // PRIVATE FUNCTIONS
         function liveTap(e){
-            
+                        
             // Grab the clicked element
             var $el = $(e.target);
 
@@ -508,7 +508,8 @@
             $body.removeClass('profile landscape').addClass(orientation).trigger('turn', {orientation: orientation});
             // scrollTo(0, 0);
         }
-        function handleTouch(e) {            
+        function handleTouch(e) {   
+                   
             var $el = $(e.target);
 
             // Only handle touchSelectors

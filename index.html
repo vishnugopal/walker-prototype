@@ -15,22 +15,54 @@
 	</style>
 	
 	<script>
-		$.jQTouch({
+		var jqT = new $.jQTouch({
 		        icon: 'jqtouch.png',
-		        statusBar: 'black-translucent',
 		        preloadImages: [
-		            ]
-		    });
+                'jqtouch/themes/apple/img/backButton.png',
+                'jqtouch/themes/apple/img/whiteButton.png',
+                'jqtouch/themes/apple/img/loading.gif'
+						]	    
+		});
 	</script>
 	
 </head>
 <body>
 
-  <div id="home">
+  <div id="options">
+      <div class="toolbar">
+          <h1>Search Results</h1>
+          <a href="#home" class="back">Back</a>
+          <a href="#" class="button rightButton greenButton">Favorites</a>
+      </div>
+			<ul class="edit rounded">
+				<li>How much time do you have for lunch? 
+					<select id="time">
+						<option value ="10">10 minutes</option>
+						<option value ="20">20 minutes</option>
+						<option value ="30">30 minutes</option>
+						<option value ="60">1 hour</option>
+						<option value ="120">2 hours</option>
+					</select>	
+				</li>
+			</ul>
+			<div style="margin: 10px;">
+			<h4>Your options</h4>
+			</div>
+			<ul class="rounded">
+         <li><a href="#"><em>Veggie Land</em></a> Take away 20 mins, Eat in 50 mins</li>
+         <li><a href="#"><em>Pie and Mash</em></a>Take away 10 mins, Eat in 20 mins</li>
+         <li><a href="#"><em>Souper Soups</em></a>Take away 45 mins, Eat in 1 hour 15 mins</li>
+			</ul>
+			<div style="margin: 10px;">
+				<a href="#" class="whiteButton pop">Find more places</a>		
+			</div>
+	</div>
+
+  <div id="home" class="current">
       <div class="toolbar">
           <h1>Walker Prototype</h1>
-          <a href="#settings" class="button leftButton flip">Settings</a>
-          <a href="#favorites" class="button rightButton greenButton">Favorites</a>
+          <a href="#" class="button leftButton">Settings</a>
+          <a href="#" class="button rightButton">Favorites</a>
       </div>
       <div id="content">
 				<ul class="edit rounded">
@@ -45,7 +77,7 @@
 					</li>
 				</ul>
 				<div style="margin: 10px;">
-				<a href="#" class="whiteButton">Find a place</a>				
+				<a href="#options" class="whiteButton pop">Find a place</a>				
 				<hr style="margin-top:20px; margin-bottom: 10px"/>
 				<h4>Friends and Colleagues</h4>
 				<h5>Where is everyone?</h5>
@@ -59,5 +91,8 @@
       </div>
   </div>
 
+
+
+	
 </body>
 </html>
