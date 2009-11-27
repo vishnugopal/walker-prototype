@@ -21,10 +21,11 @@
                 'jqtouch/themes/apple/img/backButton.png',
                 'jqtouch/themes/apple/img/whiteButton.png',
                 'jqtouch/themes/apple/img/loading.gif'
-						]	    
+						],
+						slideSelector: 'body > * > ul li a, .slide'
 		});
 		$(function(){$('#send_invites').click(function(){
-			alert("Invites sent successfully!");
+			alert("Message sent successfully!");
 			return true;
 		})});
 	</script>
@@ -32,7 +33,29 @@
 </head>
 <body>
 	
-	<div id="alert" class="current">
+	<div id="message">
+		<div class="toolbar">
+        <h1>Fred Flinstone</h1>
+        <a href="#" class="back">Back</a>
+        <a id="send_invites" href="#home" class="button flip rightButton blueButton">Send Message</a>
+    </div>
+
+		<ul class="rounded">
+			<li>Customise your message: <textarea>Hi Fred! I'm on my way, will be there in 15 minutes!</textarea></li>
+		</ul>
+		
+		<div style="margin: 10px;" align="center">
+		<img src="images/detail-map.png" />
+		</div>
+		
+		<ul class="rounded">
+			<li><a href="#detail"><em>Veggie Land</em></a>23 High Street, Islington</li>
+			<li>15 mins walk each way.</li>
+		</ul>
+	</div>
+	
+	
+	<div id="alert">
 		<div class="toolbar">
         <h1>Veggie Land</h1>
         <a href="#" class="back">Cancel</a>
@@ -136,9 +159,9 @@
 				<h5>Where is everyone?</h5>
 				</div>
 				<ul class="rounded">
-          <li><a href="#"><em>Fred</em> Flintstone - Thai Place</a> 20 minutes away</li>
-          <li><a href="#"><em>Pebble</em> Flintstone - Sandwich House</a> 15 minutes away</li>
-          <li><a href="#"><em>Wilma</em> Flintstone - Golden Crown</a> 11 minutes away</li>
+          <li><a href="#message" class="slide"><em>Fred</em> Flintstone - Veggie Land</a> 20 minutes away</li>
+          <li><a href="#message"><em>Pebble</em> Flintstone - Sandwich House</a> 15 minutes away</li>
+          <li><a href="#message"><em>Wilma</em> Flintstone - Golden Crown</a> 11 minutes away</li>
 				</ul>
 				
       </div>
