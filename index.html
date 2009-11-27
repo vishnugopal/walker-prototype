@@ -23,16 +23,69 @@
                 'jqtouch/themes/apple/img/loading.gif'
 						]	    
 		});
+		$(function(){$('#send_invites').click(function(){
+			alert("Invites sent successfully!");
+			return true;
+		})});
 	</script>
 	
 </head>
 <body>
+	
+	<div id="alert" class="current">
+		<div class="toolbar">
+        <h1>Veggie Land</h1>
+        <a href="#" class="back">Cancel</a>
+        <a id="send_invites" href="#home" class="button flip rightButton blueButton">Send Invites</a>
+    </div>
+
+		<ul class="rounded">
+			<li>Customise your message: <textarea>If anyone wants to join me, I'm off to Veggie Land for my lunch. I left work at 12:10 p.m. and I will be eating in. Details attached. </textarea></li>
+		</ul>
+		
+		<ul class="rounded">
+       <li><a href="#detail"><em>23 High Street, Islington</em></a> Take away 20 mins, Eat in 50 mins</li>
+		</ul>
+		
+	</div>
+	
+	<div id="detail">
+		<div class="toolbar">
+        <h1>Veggie Land</h1>
+        <a href="#" class="back">Back</a>
+        <a href="#alert" class="button rightButton blueButton flip">Alert Friends</a>
+    </div>
+
+		<ul class="rounded">
+       <li><a href="#detail"><em>23 High Street, Islington</em></a> Take away 20 mins, Eat in 50 mins</li>
+		</ul>
+		
+		<div style="margin: 10px;" align="center">
+		<img src="images/detail-map.png" />
+		</div>
+		
+		<ul class="rounded">
+			<li>20 mins walk each way.</li>
+			<li><em>Today's Lunch Menu</em><br />
+					Mushroom Soup<br />
+					Mushroom Salad<br />
+					Bean Casserole
+			</li>
+		</ul>
+		
+		<!-- <div style="margin: 10px;" align="center">
+		<a class="whiteButton">Place Order</a>
+		<hr style="margin-top:20px; margin-bottom: 10px"/>
+		<a class="whiteButton">Book Table</a>
+		</div> -->
+
+	</div>
 
   <div id="options">
       <div class="toolbar">
           <h1>Search Results</h1>
           <a href="#home" class="back">Back</a>
-          <a href="#" class="button rightButton greenButton">Favorites</a>
+          <a href="#" class="button rightButton">Favorites</a>
       </div>
 			<ul class="edit rounded">
 				<li>How much time do you have for lunch? 
@@ -49,9 +102,9 @@
 			<h4>Your options</h4>
 			</div>
 			<ul class="rounded">
-         <li><a href="#"><em>Veggie Land</em></a> Take away 20 mins, Eat in 50 mins</li>
-         <li><a href="#"><em>Pie and Mash</em></a>Take away 10 mins, Eat in 20 mins</li>
-         <li><a href="#"><em>Souper Soups</em></a>Take away 45 mins, Eat in 1 hour 15 mins</li>
+         <li><a href="#detail"><em>Veggie Land</em></a> Take away 20 mins, Eat in 50 mins</li>
+         <li><a href="#detail"><em>Pie and Mash</em></a>Take away 10 mins, Eat in 20 mins</li>
+         <li><a href="#detail"><em>Souper Soups</em></a>Take away 45 mins, Eat in 1 hour 15 mins</li>
 			</ul>
 			<div style="margin: 10px;">
 				<a href="#" class="whiteButton pop">Find more places</a>		
