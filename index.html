@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" charset="utf-8"/>
+	<title>Walker Prototype</title>
+	<meta name="author" content="UCLIC"/>
+	
+	<!-- jqTouch -->	
+	<script src="jqtouch/jqtouch/jquery.1.3.2.min.js"></script>
+  <script src="jqtouch/jqtouch/jqtouch.js"></script>
+  <style>
+		@import "jqtouch/jqtouch/jqtouch.css";
+		@import "jqtouch/themes/apple/theme.css";
+	</style>
+	
+	<script>
+		$.jQTouch({
+		        icon: 'jqtouch.png',
+		        statusBar: 'black-translucent',
+		        preloadImages: [
+		            ]
+		    });
+	</script>
+	
+</head>
+<body>
+
+  <div id="home">
+      <div class="toolbar">
+          <h1>Walker Prototype</h1>
+          <a href="#settings" class="button leftButton flip">Settings</a>
+          <a href="#favorites" class="button rightButton greenButton">Favorites</a>
+      </div>
+      <div id="content">
+				<ul class="edit rounded">
+					<li>How much time do you have for lunch? 
+						<select id="time">
+							<option value ="10">10 minutes</option>
+							<option value ="20">20 minutes</option>
+							<option value ="30">30 minutes</option>
+							<option value ="60">1 hour</option>
+							<option value ="120">2 hours</option>
+						</select>	
+					</li>
+				</ul>
+				<div style="margin: 10px;">
+				<a href="#" class="whiteButton">Find a place</a>				
+				<hr style="margin-top:20px; margin-bottom: 10px"/>
+				<h4>Friends and Colleagues</h4>
+				<h5>Where is everyone?</h5>
+				</div>
+				<ul class="rounded">
+          <li><a href="#"><em>Fred</em> Flintstone - Thai Place</a> 20 minutes away</li>
+          <li><a href="#"><em>Pebble</em> Flintstone - Sandwich House</a> 15 minutes away</li>
+          <li><a href="#"><em>Wilma</em> Flintstone - Golden Crown</a> 11 minutes away</li>
+				</ul>
+				
+      </div>
+  </div>
+
+</body>
+</html>
