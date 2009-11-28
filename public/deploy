@@ -1,0 +1,2 @@
+git push deploy master
+ssh vishnugopal@vishworks "cd /home/vishnugopal/walker-prototype/deploy && git reset --hard"
